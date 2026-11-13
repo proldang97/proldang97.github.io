@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pablo Cocina</title>
+<link rel="alternate" hreflang="es" href="https://proldang97.github.io/es/index.html">
+<link rel="alternate" hreflang="en" href="https://proldang97.github.io/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://proldang97.github.io/es/index.html">
+<script>
+  var lang = null;
+  try { lang = localStorage.getItem("pc_lang"); } catch (e) {}
+  if (lang !== "es" && lang !== "en") {
+    lang = (navigator.language || "es").toLowerCase().indexOf("es") === 0 ? "es" : "en";
+  }
+  location.replace(lang + "/index.html" + location.search);
+</script>
+</head>
+<body>
+<p><a href="es/index.html">Español</a> · <a href="en/index.html">English</a></p>
+</body>
+</html>

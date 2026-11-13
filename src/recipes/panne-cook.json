@@ -1,0 +1,69 @@
+{
+  "slug": "panne-cook",
+  "order": 3,
+  "image": "panne-cook.jpg",
+  "cuisine": "Colombiana",
+  "video": {"platform": "TikTok", "url": "https://www.tiktok.com/@proldan07/video/7264278449945120005"},
+  "es": {
+    "title": "Panne Cook",
+    "summary": "Pan redondo relleno de tocino, carne y champiñones en una salsa blanca cremosa.",
+    "ingredients": [
+      {"item": "Tocino", "note": "en España: bacon"},
+      {"item": "Solomo de res", "note": "en España: solomillo de ternera"},
+      {"item": "Ajo en polvo"},
+      {"item": "Sal"},
+      {"item": "Champiñones"},
+      {"item": "Harina"},
+      {"item": "Un cubo de mantequilla"},
+      {"item": "Una taza de leche"},
+      {"item": "Crema de leche", "note": "en España: nata para cocinar"},
+      {"item": "Pimienta negra"},
+      {"item": "Salsa inglesa", "note": "en España: salsa Worcestershire"},
+      {"item": "Pan estilo panne cook", "note": "en España: pan redondo"}
+    ],
+    "steps": [
+      "Partir el tocino en tiras delgadas y sofreír.",
+      "Partir el solomo de res en tiras delgadas y sofreír. Sazonar con sal y ajo en polvo.",
+      "Sofreír los champiñones.",
+      "Para la salsa: poner la harina en una sartén y mover hasta que coja un color tostado claro.",
+      "Mezclar con el cubo de mantequilla hasta que quede una mezcla espesa.",
+      "Verter la taza de leche y mezclar bien hasta que no queden grumos.",
+      "Cuando empiece a espesar, sazonar con crema de leche, pimienta negra, unas gotas de salsa inglesa y sal al gusto.",
+      "Agregar el tocino, la carne y los champiñones a la salsa.",
+      "Abrir el pan por la parte de arriba y sacarle la miga.",
+      "Verter todo dentro del pan.",
+      "Y a disfrutar."
+    ]
+  },
+  "en": {
+    "title": "Panne Cook",
+    "summary": "A round bread bowl filled with bacon, beef and mushrooms in a creamy white sauce.",
+    "ingredients": [
+      {"item": "Bacon"},
+      {"item": "Beef sirloin", "note": "solomo de res"},
+      {"item": "Garlic powder"},
+      {"item": "Salt"},
+      {"item": "Mushrooms"},
+      {"item": "Flour"},
+      {"item": "A cube of butter"},
+      {"item": "1 cup of milk"},
+      {"item": "Cooking cream", "note": "heavy cream works too"},
+      {"item": "Black pepper"},
+      {"item": "Worcestershire sauce"},
+      {"item": "A round bread loaf for a bread bowl"}
+    ],
+    "steps": [
+      "Cut the bacon into thin strips and fry.",
+      "Cut the beef into thin strips and fry. Season with salt and garlic powder.",
+      "Fry the mushrooms.",
+      "For the sauce: toast the flour in a pan, stirring, until it turns light golden.",
+      "Mix in the butter until you get a thick paste.",
+      "Pour in the milk and stir well until there are no lumps.",
+      "When it starts to thicken, season with the cream, black pepper, a few drops of Worcestershire sauce and salt to taste.",
+      "Add the bacon, beef and mushrooms to the sauce.",
+      "Cut open the top of the bread and pull out the soft inside.",
+      "Pour everything into the bread.",
+      "Enjoy."
+    ]
+  }
+}

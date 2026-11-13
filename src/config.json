@@ -1,0 +1,81 @@
+{
+  "site_name": "Pablo Cocina",
+  "site_url": "https://proldang97.github.io",
+  "ga_id": "G-XXXXXXXXXX",
+  "author": "Pablo Roldán",
+  "socials": [
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@proldan07"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@proldan07"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/pablo.roldan.g/"
+    }
+  ],
+  "coming_soon": {
+    "es": [],
+    "en": []
+  },
+  "text": {
+    "es": {
+      "html_lang": "es",
+      "recipes_dir": "recetas",
+      "tagline": "Deja que la imaginación vuele",
+      "intro": "Atrévete a cocinar conmigo y aprendamos juntos. Los límites están en tu mente.",
+      "follow": "Sígueme",
+      "recipes": "Recetas",
+      "coming_soon": "Próximamente",
+      "photo_soon": "Foto muy pronto",
+      "view_recipe": "Ver receta",
+      "ingredients": "Ingredientes",
+      "steps": "Preparación",
+      "copy": "Copiar ingredientes",
+      "copied": "Copiados",
+      "print": "Imprimir",
+      "watch": "Ver el video",
+      "back": "Todas las recetas",
+      "tick_hint": "Marca lo que ya tienes.",
+      "cookies_text": "Uso cookies de Google Analytics para saber qué recetas gustan más. Solo se activan si las aceptas.",
+      "accept": "Aceptar",
+      "reject": "Rechazar",
+      "cookie_settings": "Cookies",
+      "switch_label": "English",
+      "switch_short": "EN",
+      "eyebrow": "Un paisa cocinando en España 🇨🇴🇪🇸"
+    },
+    "en": {
+      "html_lang": "en",
+      "recipes_dir": "recipes",
+      "tagline": "Let your imagination fly",
+      "intro": "Dare to cook with me and let's learn together. The only limits are in your mind.",
+      "follow": "Follow me",
+      "recipes": "Recipes",
+      "coming_soon": "Coming soon",
+      "photo_soon": "Photo coming soon",
+      "view_recipe": "View recipe",
+      "ingredients": "Ingredients",
+      "steps": "Method",
+      "copy": "Copy ingredients",
+      "copied": "Copied",
+      "print": "Print",
+      "watch": "Watch the video",
+      "back": "All recipes",
+      "tick_hint": "Tick what you already have.",
+      "cookies_text": "I use Google Analytics cookies to learn which recipes people like most. They only turn on if you accept.",
+      "accept": "Accept",
+      "reject": "Reject",
+      "cookie_settings": "Cookies",
+      "switch_label": "Español",
+      "switch_short": "ES",
+      "eyebrow": "A paisa cooking in Spain 🇨🇴🇪🇸"
+    }
+  }
+}

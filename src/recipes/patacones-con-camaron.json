@@ -1,0 +1,65 @@
+{
+  "slug": "patacones-con-camaron",
+  "order": 1,
+  "image": "patacones-con-camaron.jpg",
+  "cuisine": "Colombiana",
+  "video": {"platform": "TikTok", "url": "https://www.tiktok.com/@proldan07/video/7259161203115642118"},
+  "es": {
+    "title": "Patacones con camarón",
+    "summary": "Patacón crujiente con camarones en salsa rosada, cebolla roja y cilantro.",
+    "ingredients": [
+      {"item": "1 plátano verde", "note": "en España: plátano macho"},
+      {"item": "300 g de camarones", "note": "en España: gambas"},
+      {"item": "1 limón", "note": "en España: lima"},
+      {"item": "1 cebolla roja", "note": "en España: cebolla morada"},
+      {"item": "Un manojo de cilantro"},
+      {"item": "Mayonesa"},
+      {"item": "Ketchup"},
+      {"item": "Pimienta negra"},
+      {"item": "Sal"},
+      {"item": "Aceite para freír"}
+    ],
+    "steps": [
+      "Limpiar los camarones.",
+      "Adobar los camarones con limón y dejar reposar.",
+      "Partir el plátano verde en dos.",
+      "Pasar el plátano a freír en aceite caliente durante unos dos minutos.",
+      "Sacar el plátano verde y aplastarlo mientras está suave.",
+      "Volver a poner el plátano aplastado en el aceite y terminar de freír.",
+      "Partir la cebolla roja y el cilantro bien finito.",
+      "Hacer la salsa: mitad ketchup y mitad mayonesa con pimienta negra, hasta que quede una salsa rosada.",
+      "Mezclar los camarones con la salsa, la cebolla y el cilantro.",
+      "Servir los camarones sobre los patacones.",
+      "Disfrutar."
+    ]
+  },
+  "en": {
+    "title": "Patacones with shrimp",
+    "summary": "Crispy fried plantain topped with shrimp in pink sauce, red onion and cilantro.",
+    "ingredients": [
+      {"item": "1 green plantain", "note": "plátano verde"},
+      {"item": "300 g (10.5 oz) shrimp"},
+      {"item": "1 lime"},
+      {"item": "1 red onion"},
+      {"item": "A bunch of cilantro", "note": "coriander in the UK"},
+      {"item": "Mayonnaise"},
+      {"item": "Ketchup"},
+      {"item": "Black pepper"},
+      {"item": "Salt"},
+      {"item": "Oil for frying"}
+    ],
+    "steps": [
+      "Clean the shrimp.",
+      "Marinate the shrimp in lime juice and let them rest.",
+      "Cut the green plantain in half.",
+      "Fry the plantain in hot oil for about two minutes.",
+      "Take the plantain out and flatten it while it is still soft.",
+      "Put the flattened plantain back in the oil and finish frying.",
+      "Chop the red onion and cilantro very finely.",
+      "Make the sauce: half ketchup and half mayonnaise with black pepper, until you get a pink sauce.",
+      "Mix the shrimp with the sauce, onion and cilantro.",
+      "Serve the shrimp on top of the patacones.",
+      "Enjoy."
+    ]
+  }
+}

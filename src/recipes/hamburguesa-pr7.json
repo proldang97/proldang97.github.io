@@ -1,0 +1,165 @@
+{
+  "slug": "hamburguesa-pr7",
+  "order": 2,
+  "image": "hamburguesa-pr7.jpg",
+  "cuisine": "Colombiana",
+  "video": {
+    "platform": "TikTok",
+    "url": "https://www.tiktok.com/@proldan07/video/7361218821908139269"
+  },
+  "es": {
+    "title": "Hamburguesa PR7",
+    "summary": "Hamburguesa de tres carnes con queso, tocino, aros de cebolla y papas al airfryer.",
+    "ingredients": [
+      {
+        "item": "Papas",
+        "note": "en España: patatas"
+      },
+      {
+        "item": "Cebolla"
+      },
+      {
+        "item": "Huevo"
+      },
+      {
+        "item": "Harina"
+      },
+      {
+        "item": "Panko"
+      },
+      {
+        "item": "100 g de carne de res molida",
+        "note": "en España: carne picada de ternera"
+      },
+      {
+        "item": "50 g de carne de cerdo molida",
+        "note": "en España: carne picada de cerdo"
+      },
+      {
+        "item": "50 g de panceta molida",
+        "note": "en España: panceta picada"
+      },
+      {
+        "item": "Sal"
+      },
+      {
+        "item": "Salsa inglesa",
+        "note": "en España: salsa Worcestershire"
+      },
+      {
+        "item": "Ajo en polvo"
+      },
+      {
+        "item": "Tocino",
+        "note": "en España: bacon"
+      },
+      {
+        "item": "Queso tajado",
+        "note": "en España: queso en lonchas"
+      },
+      {
+        "item": "Lechuga"
+      },
+      {
+        "item": "Pan de hamburguesa"
+      },
+      {
+        "item": "Salsas al gusto: mayonesa, mostaza y ketchup"
+      },
+      {
+        "item": "Aceite de oliva"
+      },
+      {
+        "item": "Aceite para freír"
+      }
+    ],
+    "steps": [
+      "Cortar las papas y ponerlas a hervir durante 5 minutos.",
+      "Sacarlas, secarlas, ponerles aceite de oliva y pasarlas al airfryer a 180 °C durante 20 minutos.",
+      "Para los aros de cebolla: cortar la cebolla en círculos grandes y gruesos.",
+      "Apanarlos en este orden: harina, huevo y panko.",
+      "Freír los aros apanados hasta que estén bien dorados.",
+      "Mezclar las tres carnes molidas y adobarlas con salsa inglesa, sal y ajo en polvo.",
+      "Formar las hamburguesas y cocinarlas en la plancha.",
+      "Unos minutos antes de que estén listas, poner el queso encima para que se derrita.",
+      "Freír el tocino en una sartén hasta que esté bien dorado.",
+      "Untar las salsas al gusto en el pan.",
+      "Armar la burger.",
+      "Y a disfrutar."
+    ]
+  },
+  "en": {
+    "title": "PR7 Burger",
+    "summary": "A three-meat burger with cheese, bacon, onion rings and air-fryer fries.",
+    "ingredients": [
+      {
+        "item": "Potatoes"
+      },
+      {
+        "item": "Onion"
+      },
+      {
+        "item": "Egg"
+      },
+      {
+        "item": "Flour"
+      },
+      {
+        "item": "Panko"
+      },
+      {
+        "item": "100 g (3.5 oz) ground beef"
+      },
+      {
+        "item": "50 g (1.75 oz) ground pork"
+      },
+      {
+        "item": "50 g (1.75 oz) ground pork belly"
+      },
+      {
+        "item": "Salt"
+      },
+      {
+        "item": "Worcestershire sauce"
+      },
+      {
+        "item": "Garlic powder"
+      },
+      {
+        "item": "Bacon"
+      },
+      {
+        "item": "Sliced cheese"
+      },
+      {
+        "item": "Lettuce"
+      },
+      {
+        "item": "Burger bun"
+      },
+      {
+        "item": "Sauces to taste: mayonnaise, mustard and ketchup"
+      },
+      {
+        "item": "Olive oil"
+      },
+      {
+        "item": "Oil for frying"
+      }
+    ],
+    "steps": [
+      "Cut the potatoes and boil them for 5 minutes.",
+      "Drain and dry them, toss with olive oil and air-fry at 180 °C (350 °F) for 20 minutes.",
+      "For the onion rings: cut the onion into large, thick rings.",
+      "Bread them in this order: flour, egg, then panko.",
+      "Fry the breaded rings until golden brown.",
+      "Mix the three ground meats and season with Worcestershire sauce, salt and garlic powder.",
+      "Shape the patties and cook them on a griddle.",
+      "A few minutes before they are done, put the cheese on top so it melts.",
+      "Fry the bacon in a pan until golden brown.",
+      "Spread the sauces on the bun to taste.",
+      "Build your burger.",
+      "Enjoy."
+    ]
+  }
+}
