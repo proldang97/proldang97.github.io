@@ -3,6 +3,8 @@
 // is set in config.json, events are printed to the browser console instead.
 (function () {
   var PC = window.PC || {};
+  // Add ?debug to any page address to see its events live in GA4's DebugView.
+  PC.debug = /[?&]debug\b/.test(location.search);
   var GA_READY_ID = /^G-[A-Z0-9]+$/.test(PC.gaId || "") && PC.gaId !== "G-XXXXXXXXXX";
   var CONSENT_KEY = "pc_consent";
   var LANG_KEY = "pc_lang";
@@ -30,7 +32,9 @@
     s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(PC.gaId);
     document.head.appendChild(s);
     gtag("js", new Date());
-    gtag("config", PC.gaId, { site_language: PC.lang, content_group: PC.page });
+    var settings = { site_language: PC.lang, content_group: PC.page };
+    if (PC.debug) settings.debug_mode = true;
+    gtag("config", PC.gaId, settings);
   }
 
   function track(name, params) {
