@@ -1,0 +1,37 @@
+{
+  "photo": "pablo.jpg",
+  "es": {
+    "path": "sobre-mi",
+    "nav": "Sobre mí",
+    "title": "Sobre mí",
+    "description": "Pablo Roldán Gómez, un paisa aventurero que cocina recetas fáciles con sabor colombiano desde Madrid.",
+    "lead": "Hola, soy Pablo Roldán Gómez, un paisa aventurero al que no le gusta quedarse quieto. 🌍",
+    "paragraphs": [
+      "Hace unos años empecé mi canal de recetas como una afición. Siempre me gustó cocinar y un día un amigo me sugirió subir mis comidas a las redes sociales, ya que le parecieron bastante buenas.",
+      "Empecé por TikTok, cuando aún vivía en Medellín, y sorpresivamente mis recetas empezaron a atraer mucho público. Los views que recibía eran 10 o 20 veces superiores a los seguidores que tenía, y eso me motivó a seguir. Hoy tengo mis recetas también en YouTube e Instagram. Te invito a seguirme en cada una de ellas:",
+      "[socials]",
+      "Tras dos años me mudé a Valencia, España, a realizar un máster en Marketing Digital, ya que el tema de las redes y los negocios virtuales siempre me llamó la atención. Sin embargo, vivir con compañeros de piso, estudiar, trabajar y tener una vida social fueron factores que me hicieron dejar de lado este proyecto en el que venía trabajando muy bien. 🥲",
+      "Pero nunca es tarde para retomar las riendas y redirigir los esfuerzos. Hoy, en Madrid, tengo la certeza de que este proyecto tiene mucho potencial y con la ayuda de todos ustedes lo vamos a hacer realidad. 🔥",
+      "Sígueme en las redes y mira todas mis recetas. Déjame comentarios y dime qué te gustaría ver. De a poco iré moldeando este sitio web para entregar una experiencia más a la altura del canal. 🤙🏼"
+    ],
+    "closing": "Como diríamos en Colombia… se vienen cositas 😏🔝",
+    "cta": "Ver las recetas"
+  },
+  "en": {
+    "path": "about",
+    "nav": "About me",
+    "title": "About me",
+    "description": "Pablo Roldán Gómez, an adventurous paisa cooking easy recipes with Colombian flavor from Madrid.",
+    "lead": "Hi, I'm Pablo Roldán Gómez, an adventurous paisa who can't sit still. 🌍",
+    "paragraphs": [
+      "A few years ago I started my recipe channel as a hobby. I've always loved cooking, and one day a friend suggested I post my food on social media because it looked really good.",
+      "I started on TikTok while I was still living in Medellín, and to my surprise my recipes began attracting a big audience. My videos got 10 to 20 times more views than the followers I had, and that motivated me to keep going. Today my recipes are also on YouTube and Instagram. Follow me on all of them:",
+      "[socials]",
+      "Two years later I moved to Valencia, Spain, to do a master's in Digital Marketing, because social media and online business always caught my attention. But living with flatmates, studying, working and having a social life made me put aside this project, even though it had been going really well. 🥲",
+      "It's never too late to take the reins again and refocus. Now, in Madrid, I'm sure this project has a lot of potential, and with your help we're going to make it happen. 🔥",
+      "Follow me on social media and check out all my recipes. Leave me comments and tell me what you'd like to see. Little by little I'll shape this website into an experience that lives up to the channel. 🤙🏼"
+    ],
+    "closing": "As we'd say in Colombia… se vienen cositas (big things are coming) 😏🔝",
+    "cta": "See the recipes"
+  }
+}

@@ -20,6 +20,7 @@ recipes = sorted(
     (json.loads(p.read_text(encoding="utf-8")) for p in (SRC / "recipes").glob("*.json")),
     key=lambda r: (r.get("order", 999), r["slug"]),
 )
+about = json.loads((SRC / "about.json").read_text(encoding="utf-8"))
 NAME = config["site_name"]
 BASE = config["site_url"].rstrip("/")
 
@@ -50,6 +51,18 @@ def home_path(lang):
 
 def recipe_path(lang, slug):
     return f"{lang}/{T(lang, 'recipes_dir')}/{slug}.html"
+
+
+def about_path(lang):
+    return f"{lang}/{about[lang]['path']}.html"
+
+
+def social_links(location):
+    return "".join(
+        f'<a href="{escape(s["url"])}" target="_blank" rel="noopener" data-track="social_click" '
+        f'data-p-platform="{s["id"]}" data-p-location="{location}">{escape(s["label"])}</a>'
+        for s in config["socials"]
+    )
 
 
 def photo_html(lang, rel, rec, title, cls_attrs=''):
@@ -93,9 +106,12 @@ def page(lang, rel, title, description, body, page_type, alternates, recipe_name
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="{rel}{home_path(lang)}">{LOGO}<span>{escape(NAME)}</span></a>
+    <nav class="site-nav">
+    <a class="nav-link{' active' if page_type == 'about' else ''}" href="{rel}{about_path(lang)}">{escape(about[lang]['nav'])}</a>
     <a class="lang-switch" href="{rel}{alternates[other_lang]}" hreflang="{other_lang}" lang="{other_lang}"
        aria-label="{escape(T(lang, 'switch_label'))}" data-track="language_switch"
        data-p-from-language="{lang}" data-p-to-language="{other_lang}">{T(lang, 'switch_short')}</a>
+    </nav>
   </div>
 </header>
 <main>
@@ -238,6 +254,30 @@ def build_recipe(lang, rec):
     return page(lang, rel, title, r["summary"], body, "recipe", alternates, rec["slug"], head)
 
 
+def build_about(lang):
+    rel = "../"
+    a = about[lang]
+    blocks = []
+    for p in a["paragraphs"]:
+        if p == "[socials]":
+            blocks.append(f'<div class="socials">{social_links("about")}</div>')
+        else:
+            blocks.append(f"<p>{escape(p)}</p>")
+    body = f"""<div class="wrap about-layout">
+  <div class="about-photo"><img src="{rel}assets/img/{about['photo']}" alt="Pablo Roldán Gómez" width="933" height="1400"></div>
+  <article class="about-main">
+    <span class="eyebrow">{escape(a['title'])}</span>
+    <h1>{escape(a['lead'])}</h1>
+    <div class="about-text">{''.join(blocks)}</div>
+    <p class="closing">{escape(a['closing'])}</p>
+    <a class="btn primary" href="index.html#recetas" data-track="select_recipe_list" data-p-location="about">{escape(a['cta'])} →</a>
+  </article>
+</div>"""
+    alternates = {l: about_path(l) for l in LANGS}
+    return page(lang, rel, f"{a['title']} · {NAME}", a["description"], body, "about", alternates,
+                extra_head=f'<meta property="og:image" content="{BASE}/assets/img/{about["photo"]}">')
+
+
 ROOT_INDEX = """<!doctype html>
 <html lang="es">
 <head>
@@ -271,6 +311,8 @@ def main():
     for lang in LANGS:
         write(home_path(lang), build_home(lang))
         urls.append(home_path(lang))
+        write(about_path(lang), build_about(lang))
+        urls.append(about_path(lang))
         for rec in recipes:
             write(recipe_path(lang, rec["slug"]), build_recipe(lang, rec))
             urls.append(recipe_path(lang, rec["slug"]))
