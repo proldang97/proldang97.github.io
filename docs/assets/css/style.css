@@ -228,3 +228,37 @@ a.card:hover h3 { color: var(--accent); }
   .recipe-photo { position: static; }
   body { font-size: 12pt; }
 }
+
+/* Work with me page */
+.work { display: grid; gap: 56px; padding-block: 48px 72px; }
+.work-hero { display: grid; gap: 18px; justify-items: start; max-width: 40em; }
+.work-hero h1 { font-size: clamp(2rem, 4.4vw, 3.1rem); font-style: italic; font-weight: 400; }
+.work-hero p, .work-cta p { margin: 0; }
+.work-section h2, .work-cta h2 { font-style: italic; font-weight: 400; margin: 0 0 20px; }
+.stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+.stats li { background: var(--surface); border-radius: var(--radius); padding: 20px; display: grid; gap: 4px; }
+.stats strong { font-family: var(--font-display); font-size: 2rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stats span { color: var(--muted); font-size: 0.95rem; }
+.services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.services li { background: var(--surface); border-radius: var(--radius); padding: 24px; }
+.services .icon { font-size: 1.6rem; }
+.services h3 { margin: 10px 0 6px; font-size: 1.1rem; }
+.services p { margin: 0; color: var(--muted); }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.shots a { position: relative; display: block; border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 4; color: #fff; text-decoration: none; }
+.shots img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.shots a:hover img { transform: scale(1.03); }
+.shots span {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 32px 14px 12px; font-weight: 600;
+  background: linear-gradient(transparent, rgb(0 0 0 / 0.65));
+}
+.work-cta { background: var(--surface); border-radius: var(--radius); padding: 36px; display: grid; gap: 16px; justify-items: start; }
+@media (max-width: 760px) {
+  .work { gap: 40px; padding-block: 28px 56px; }
+  .services, .shots { grid-template-columns: 1fr; }
+  .shots a { aspect-ratio: 4 / 3; }
+  .work-cta { padding: 24px; }
+  .site-nav { gap: 10px; }
+  .nav-link { font-size: 0.88rem; }
+}
+@media (max-width: 400px) { .brand span { display: none; } }

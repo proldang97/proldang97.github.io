@@ -21,6 +21,7 @@ recipes = sorted(
     key=lambda r: (r.get("order", 999), r["slug"]),
 )
 about = json.loads((SRC / "about.json").read_text(encoding="utf-8"))
+work = json.loads((SRC / "work.json").read_text(encoding="utf-8"))
 NAME = config["site_name"]
 BASE = config["site_url"].rstrip("/")
 
@@ -55,6 +56,10 @@ def recipe_path(lang, slug):
 
 def about_path(lang):
     return f"{lang}/{about[lang]['path']}.html"
+
+
+def work_path(lang):
+    return f"{lang}/{work[lang]['path']}.html"
 
 
 def social_links(location):
@@ -108,6 +113,7 @@ def page(lang, rel, title, description, body, page_type, alternates, recipe_name
     <a class="brand" href="{rel}{home_path(lang)}">{LOGO}<span>{escape(NAME)}</span></a>
     <nav class="site-nav">
     <a class="nav-link{' active' if page_type == 'about' else ''}" href="{rel}{about_path(lang)}">{escape(about[lang]['nav'])}</a>
+    <a class="nav-link{' active' if page_type == 'work' else ''}" href="{rel}{work_path(lang)}">{escape(work[lang]['nav'])}</a>
     <a class="lang-switch" href="{rel}{alternates[other_lang]}" hreflang="{other_lang}" lang="{other_lang}"
        aria-label="{escape(T(lang, 'switch_label'))}" data-track="language_switch"
        data-p-from-language="{lang}" data-p-to-language="{other_lang}">{T(lang, 'switch_short')}</a>
@@ -278,6 +284,58 @@ def build_about(lang):
                 extra_head=f'<meta property="og:image" content="{BASE}/assets/img/{about["photo"]}">')
 
 
+def build_work(lang):
+    rel = "../"
+    w = work[lang]
+    contact = (
+        f'<a class="btn primary" href="{escape(work["contact_url"])}" target="_blank" rel="noopener" '
+        f'data-track="contact_click" data-p-platform="instagram" data-p-location="{{loc}}">{escape(w["cta"])} →</a>'
+    )
+    stats = ""
+    if work["stats"]:
+        items = "".join(
+            f'<li><strong>{escape(st["value"])}</strong><span>{escape(st["label"][lang])}</span></li>'
+            for st in work["stats"]
+        )
+        stats = f'<section class="work-section"><h2>{escape(w["stats_title"])}</h2><ul class="stats">{items}</ul></section>'
+    services = "".join(
+        f'<li><span class="icon" aria-hidden="true">{sv["icon"]}</span><h3>{escape(sv["title"])}</h3><p>{escape(sv["text"])}</p></li>'
+        for sv in w["services"]
+    )
+    shots = "".join(
+        f'<a href="{escape(rec["video"]["url"])}" target="_blank" rel="noopener" data-track="watch_video_click" '
+        f'data-p-recipe-name="{rec["slug"]}" data-p-platform="{rec["video"]["platform"].lower()}" data-p-location="work">'
+        f'<img src="{rel}assets/img/{rec["image"]}" alt="{escape(rec[lang]["title"])}" loading="lazy">'
+        f'<span>{escape(rec[lang]["title"])} ▶</span></a>'
+        for rec in recipes if rec.get("image") and rec.get("video")
+    )
+    body = f"""<div class="wrap work">
+  <section class="work-hero">
+    <span class="eyebrow">{escape(w['title'])}</span>
+    <h1>{escape(w['lead'])}</h1>
+    <p>{escape(w['intro'])}</p>
+    {contact.format(loc="top")}
+  </section>
+  {stats}
+  <section class="work-section">
+    <h2>{escape(w['services_title'])}</h2>
+    <ul class="services">{services}</ul>
+  </section>
+  <section class="work-section">
+    <h2>{escape(w['work_title'])}</h2>
+    <div class="shots">{shots}</div>
+  </section>
+  <section class="work-cta">
+    <h2>{escape(w['cta_title'])}</h2>
+    <p>{escape(w['cta_text'])}</p>
+    {contact.format(loc="bottom")}
+  </section>
+</div>"""
+    alternates = {l: work_path(l) for l in LANGS}
+    return page(lang, rel, f"{w['title']} · {NAME}", w["description"], body, "work", alternates,
+                extra_head=f'<meta property="og:image" content="{BASE}/assets/img/{about["photo"]}">')
+
+
 ROOT_INDEX = """<!doctype html>
 <html lang="es">
 <head>
@@ -313,6 +371,8 @@ def main():
         urls.append(home_path(lang))
         write(about_path(lang), build_about(lang))
         urls.append(about_path(lang))
+        write(work_path(lang), build_work(lang))
+        urls.append(work_path(lang))
         for rec in recipes:
             write(recipe_path(lang, rec["slug"]), build_recipe(lang, rec))
             urls.append(recipe_path(lang, rec["slug"]))
