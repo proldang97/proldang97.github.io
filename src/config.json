@@ -49,7 +49,7 @@
       "cookie_settings": "Cookies",
       "switch_label": "English",
       "switch_short": "EN",
-      "eyebrow": "Las recetas de Pablo Roldán"
+      "eyebrow": "By Pablo Roldán"
     },
     "en": {
       "html_lang": "en",
@@ -75,7 +75,7 @@
       "cookie_settings": "Cookies",
       "switch_label": "Español",
       "switch_short": "ES",
-      "eyebrow": "Recipes by Pablo Roldán"
+      "eyebrow": "By Pablo Roldán"
     }
   }
 }
