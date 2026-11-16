@@ -1,0 +1,53 @@
+{
+  "slug": "crema-de-espinaca",
+  "order": 5,
+  "image": "crema-de-espinaca.jpg",
+  "cuisine": "Casera",
+  "video": {"platform": "TikTok", "url": "https://www.tiktok.com/@proldan07/video/7705941198422265106"},
+  "es": {
+    "title": "Crema de espinaca",
+    "summary": "Crema suave de espinacas, brócoli y patata, con un hilo de nata y patatas crujientes por encima.",
+    "ingredients": [
+      {"item": "Patatas (2–3, peladas y en dados)", "note": "en Colombia: papas"},
+      {"item": "Cebolla (1, troceada)"},
+      {"item": "Brócoli (unos ramilletes)"},
+      {"item": "Espinacas frescas (un buen puñado)"},
+      {"item": "Agua (lo justo para cubrir las verduras)"},
+      {"item": "Un cubo de mantequilla"},
+      {"item": "Salsa inglesa o soja", "note": "en España: salsa Worcestershire"},
+      {"item": "Sal y pimienta al gusto"},
+      {"item": "Para decorar: nata líquida y patatas de paquete", "note": "en Colombia: crema de leche y papas fritas de paquete"}
+    ],
+    "steps": [
+      "Pela las patatas y córtalas en dados. Trocea la cebolla y separa el brócoli en ramilletes.",
+      "Pon en una olla la patata, la cebolla, el brócoli y añade las espinacas por encima.",
+      "Cubre con agua, tapa y deja hervir hasta que la patata esté tierna (unos 15–20 min).",
+      "Pasa las verduras a la batidora con parte del agua de cocción y tritura hasta que quede una crema fina. Añade más caldo si la quieres más ligera.",
+      "Vuelve a poner la crema en la olla, añade un cubo de mantequilla, gotas de salsa inglesa y sal y pimienta al gusto, remueve y deja unos minutos con la tapa puesta a fuego bajo.",
+      "Sírvela en un plato hondo y decórala con un hilo de nata líquida por encima y patatas de paquete troceadas."
+    ]
+  },
+  "en": {
+    "title": "Cream of spinach soup",
+    "summary": "A smooth soup of spinach, broccoli and potato, finished with a swirl of cream and crunchy potato chips.",
+    "ingredients": [
+      {"item": "Potatoes (2–3, peeled and diced)"},
+      {"item": "Onion (1, chopped)"},
+      {"item": "Broccoli (a few florets)"},
+      {"item": "Fresh spinach (a good handful)"},
+      {"item": "Water (just enough to cover the vegetables)"},
+      {"item": "A cube of butter"},
+      {"item": "Worcestershire sauce or soy sauce"},
+      {"item": "Salt and pepper to taste"},
+      {"item": "To garnish: single cream and bagged potato chips (crisps)"}
+    ],
+    "steps": [
+      "Peel and dice the potatoes. Chop the onion and cut the broccoli into florets.",
+      "Put the potato, onion and broccoli in a pot and add the spinach on top.",
+      "Cover with water, put the lid on and boil until the potato is tender (about 15–20 min).",
+      "Transfer the vegetables to a blender with some of the cooking water and blend until smooth. Add more liquid if you want it thinner.",
+      "Pour the soup back into the pot, add a cube of butter, a few drops of Worcestershire sauce, and salt and pepper to taste. Stir and leave it covered on low heat for a few minutes.",
+      "Serve in a deep bowl and garnish with a swirl of cream and crushed potato chips."
+    ]
+  }
+}
