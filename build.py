@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the Pablo Cocina website.
+"""Builds the P-Recetas website.
 
 Edit src/config.json (site name, GA4 ID, links, texts) or add a recipe file in
 src/recipes/, then run:  python3 build.py

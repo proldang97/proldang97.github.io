@@ -1,4 +1,4 @@
-// Pablo Cocina: cookie consent, GA4 and custom events.
+// P-Recetas: cookie consent, GA4 and custom events.
 // GA4 only loads after the visitor accepts cookies. Until a real Measurement ID
 // is set in config.json, events are printed to the browser console instead.
 (function () {
