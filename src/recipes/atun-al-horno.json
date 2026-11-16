@@ -1,0 +1,53 @@
+{
+  "slug": "atun-al-horno",
+  "order": 4,
+  "image": "",
+  "cuisine": "Colombiana",
+  "video": {"platform": "TikTok", "url": "https://www.tiktok.com/@proldan07/video/7708515611923533062"},
+  "es": {
+    "title": "Atún al horno",
+    "summary": "Capas de puré de papa, atún y sofrito, con queso fundido y gratinado por encima.",
+    "ingredients": [
+      {"item": "Papas", "note": "en España: patatas"},
+      {"item": "Atún en lata"},
+      {"item": "Pimentón amarillo", "note": "en España: pimiento amarillo"},
+      {"item": "Tomate"},
+      {"item": "Ajo"},
+      {"item": "Aceite de oliva"},
+      {"item": "Queso en tajadas", "note": "en España: queso en lonchas"},
+      {"item": "Queso para gratinar y hierbas secas", "note": "en España: queso rallado para gratinar"},
+      {"item": "Sal y pimienta al gusto"}
+    ],
+    "steps": [
+      "Cocina las papas y hazlas puré.",
+      "Sofríe el ajo, el pimentón y el tomate en aceite de oliva.",
+      "Engrasa un molde con aceite de oliva y pon una capa de puré.",
+      "Agrega el atún y el sofrito encima.",
+      "Cubre con queso en tajadas y otra capa de puré.",
+      "Termina con queso para gratinar y hierbas, y hornea hasta que esté dorado."
+    ]
+  },
+  "en": {
+    "title": "Baked tuna",
+    "summary": "Layers of mashed potato, tuna and a tomato-pepper sauté, with melted cheese and a golden gratin on top.",
+    "ingredients": [
+      {"item": "Potatoes"},
+      {"item": "Canned tuna"},
+      {"item": "Yellow bell pepper"},
+      {"item": "Tomato"},
+      {"item": "Garlic"},
+      {"item": "Olive oil"},
+      {"item": "Sliced cheese"},
+      {"item": "Grated cheese for gratin and dried herbs"},
+      {"item": "Salt and pepper to taste"}
+    ],
+    "steps": [
+      "Cook the potatoes and mash them.",
+      "Sauté the garlic, pepper and tomato in olive oil.",
+      "Grease a baking dish with olive oil and add a layer of mashed potato.",
+      "Add the tuna and the sauté on top.",
+      "Cover with sliced cheese and another layer of mashed potato.",
+      "Finish with grated cheese and herbs, and bake until golden."
+    ]
+  }
+}
