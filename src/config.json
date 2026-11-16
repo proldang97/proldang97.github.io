@@ -1,6 +1,7 @@
 {
   "site_name": "P-Recetas",
   "site_url": "https://proldang97.github.io",
+  "hero_image": "hero-pablo.jpg",
   "ga_id": "G-V3RZYFLM7P",
   "author": "Pablo Roldán",
   "socials": [
@@ -49,7 +50,8 @@
       "cookie_settings": "Cookies",
       "switch_label": "English",
       "switch_short": "EN",
-      "eyebrow": "By Pablo Roldán"
+      "eyebrow": "By Pablo Roldán",
+      "hero_alt": "Ilustración de Pablo cocinando, rodeado de cámaras, ingredientes e ideas"
     },
     "en": {
       "html_lang": "en",
@@ -75,7 +77,8 @@
       "cookie_settings": "Cookies",
       "switch_label": "Español",
       "switch_short": "ES",
-      "eyebrow": "By Pablo Roldán"
+      "eyebrow": "By Pablo Roldán",
+      "hero_alt": "Illustration of Pablo cooking, surrounded by cameras, ingredients and ideas"
     }
   }
 }

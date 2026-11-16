@@ -146,21 +146,15 @@ def page(lang, rel, title, description, body, page_type, alternates, recipe_name
 
 def build_home(lang):
     rel = "../"
-    feat = next((r for r in recipes if r.get("image")), None)
     social_links = "".join(
         f'<a href="{escape(s["url"])}" target="_blank" rel="noopener" data-track="social_click" '
         f'data-p-platform="{s["id"]}" data-p-location="hero">{escape(s["label"])}</a>'
         for s in config["socials"]
     )
-    photo = ""
-    if feat:
-        r = feat[lang]
-        photo = (
-            f'<a class="hero-photo" href="{T(lang, "recipes_dir")}/{feat["slug"]}.html" '
-            f'data-track="select_recipe" data-p-recipe-name="{feat["slug"]}" data-p-location="hero">'
-            f'<img src="{rel}assets/img/{feat["image"]}" alt="{escape(r["title"])}" width="680" height="1400">'
-            f'<span class="tag">{escape(r["title"])} →</span></a>'
-        )
+    photo = (
+        f'<div class="hero-photo hero-art"><img src="{rel}assets/img/{config["hero_image"]}" '
+        f'alt="{escape(T(lang, "hero_alt"))}" width="820" height="820"></div>'
+    )
     cards = []
     for rec in recipes:
         r = rec[lang]

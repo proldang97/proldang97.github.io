@@ -262,3 +262,7 @@ a.card:hover h3 { color: var(--accent); }
   .nav-link { font-size: 0.88rem; }
 }
 @media (max-width: 400px) { .brand span { display: none; } }
+
+/* Home hero illustration (square, shown whole) */
+.hero-photo.hero-art { aspect-ratio: 1 / 1; }
+@media (max-width: 760px) { .hero-photo.hero-art { aspect-ratio: 1 / 1; } }
