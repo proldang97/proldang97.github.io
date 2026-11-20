@@ -1,0 +1,52 @@
+{
+  "slug": "salsa-verde",
+  "order": 6,
+  "image": "salsa-verde.jpg",
+  "video": {"platform": "TikTok", "url": "https://www.tiktok.com/@proldan07/video/7710300264099564818"},
+  "es": {
+    "title": "Salsa verde",
+    "summary": "Salsa cremosa de mayonesa, perejil y cilantro, con un toque dulce de miel y mostaza. Perfecta para papas, perros y hamburguesas.",
+    "ingredients": [
+      {"item": "Mayonesa"},
+      {"item": "Ajo picado (dos dientes)"},
+      {"item": "Perejil picado"},
+      {"item": "Cilantro picado"},
+      {"item": "Mostaza (dos cucharadas)"},
+      {"item": "Miel (dos cucharadas)"},
+      {"item": "Vinagre (una cucharada)", "note": "yo usé vinagre de manzana"}
+    ],
+    "steps": [
+      "Pon la mayonesa en el vaso de la licuadora.",
+      "Agrega el ajo picado.",
+      "Añade el perejil picado y el cilantro, sin miedo: entre más, más verde queda la salsa.",
+      "Agrega dos cucharadas de mostaza y dos de miel.",
+      "Añade una cucharada de vinagre (yo utilicé de manzana).",
+      "Licúa hasta que quede cremosa y homogénea. Si hace falta, para, mezcla con una cuchara y vuelve a licuar.",
+      "Pásala a un frasco con boquilla y listo.",
+      "Sírvela sobre papas fritas, perros, hamburguesas o lo que quieras 🔥"
+    ]
+  },
+  "en": {
+    "title": "Green sauce",
+    "summary": "A creamy sauce of mayonnaise, parsley and cilantro, with a sweet touch of honey and mustard. Perfect for fries, hot dogs and burgers.",
+    "ingredients": [
+      {"item": "Mayonnaise"},
+      {"item": "Minced garlic (two cloves)"},
+      {"item": "Chopped parsley"},
+      {"item": "Chopped cilantro (coriander)"},
+      {"item": "Mustard (two tablespoons)"},
+      {"item": "Honey (two tablespoons)"},
+      {"item": "Vinegar (one tablespoon)", "note": "I used apple cider vinegar"}
+    ],
+    "steps": [
+      "Put the mayonnaise in the blender jar.",
+      "Add the minced garlic.",
+      "Add the chopped parsley and cilantro, don't be shy: the more you add, the greener the sauce.",
+      "Add two tablespoons of mustard and two of honey.",
+      "Add one tablespoon of vinegar (I used apple cider).",
+      "Blend until creamy and smooth. If needed, stop, stir with a spoon and blend again.",
+      "Pour it into a squeeze bottle and you're done.",
+      "Serve it on fries, hot dogs, burgers or whatever you like 🔥"
+    ]
+  }
+}
